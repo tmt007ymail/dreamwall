@@ -20,8 +20,8 @@ Status key: `[ ]` todo · `[~]` blocked/waiting · `[x]` done
 | A2 | [x] | You | Create empty GitHub repo named `dreamwall` (no README) — https://github.com/tmt007ymail/dreamwall (**public**) |
 | A3 | [x] | Agent | Push `cursor/dreamwall-mvp-a3d1` (+ `main`) to that repo |
 | A4 | [~] | You + Agent | **Publish unblock:** this chat isn’t attached to the GitHub repo, so `publish-app` can’t run here. Open a **new Cloud Agent on** https://github.com/tmt007ymail/dreamwall (branch `main` or `cursor/dreamwall-mvp-a3d1`) and say: “Publish Dreamwall with slug dreamwall.” Confirm visibility in the Publish dialog (**public** if anyone should write dreams). Alt: import the repo in Vercel → Deploy. |
-| A5 | [ ] | You | Buy domain (prefer `dreamwall.app` or `dreamwall.co`) |
-| A6 | [ ] | You | Point DNS to host after publish/Vercel |
+| A5 | [x] | You | Buy domain **godreamwall.com** (HostGator, domain only) |
+| A6 | [~] | You | Point DNS: HostGator → live app host (Grok custom domain or Vercel) |
 
 **A2 how-to (2 minutes):**  
 1. Open https://github.com/new  
