@@ -140,8 +140,7 @@ export function DreamwallApp() {
               </a>
             </div>
             <p className="mt-5 text-sm text-mist/60">
-              Free · 10 seconds · Anonymous OK · Still monetizable via credits
-              &amp; premieres
+              Free · 10 seconds · Anonymous OK
             </p>
           </div>
 
