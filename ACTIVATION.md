@@ -17,8 +17,8 @@ Status key: `[ ]` todo · `[~]` blocked/waiting · `[x]` done
 | # | Status | Owner | Action |
 |---|--------|-------|--------|
 | A1 | [x] | Agent | MVP built (hero → write → share → wall + bots + spend cap) |
-| A2 | [~] | You | Create empty GitHub repo named `dreamwall` (no README) |
-| A3 | [~] | Agent | Push `cursor/dreamwall-mvp-a3d1` to that repo |
+| A2 | [x] | You | Create empty GitHub repo named `dreamwall` (no README) — https://github.com/tmt007ymail/dreamwall |
+| A3 | [x] | Agent | Push `cursor/dreamwall-mvp-a3d1` (+ `main`) to that repo |
 | A4 | [~] | Agent | Call Cursor **publish-app** proposal (`dreamwall` slug) — you confirm visibility |
 | A5 | [ ] | You | Buy domain (prefer `dreamwall.app` or `dreamwall.co`) |
 | A6 | [ ] | You | Point DNS to host after publish/Vercel |
