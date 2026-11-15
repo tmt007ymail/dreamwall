@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0c1218;
+  --ink-soft: #162029;
+  --mist: #d7e0e8;
+  --paper: #f3efe6;
+  --amber: #e8a54b;
+  --amber-hot: #ffb45a;
+  --teal: #6ec8c0;
+  --glow: rgba(232, 165, 75, 0.35);
+  --background: var(--ink);
+  --foreground: var(--paper);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  min-height: 100vh;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--amber) 55%, transparent);
+  color: var(--ink);
+}
+
+@keyframes drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(2%, -1.5%, 0) scale(1.04);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-line {
+  0%,
+  100% {
+    opacity: 0.45;
+    width: 42%;
+  }
+  50% {
+    opacity: 1;
+    width: 68%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-drift {
+  animation: drift 18s ease-in-out infinite;
+}
+
+.animate-rise {
+  animation: rise 0.8s ease-out both;
+}
+
+.animate-rise-delay {
+  animation: rise 0.9s ease-out 0.12s both;
+}
+
+.animate-rise-delay-2 {
+  animation: rise 1s ease-out 0.22s both;
+}
+
+.glow-line {
+  animation: pulse-line 2.8s ease-in-out infinite;
+}
+
+.dream-shimmer {
+  background: linear-gradient(
+    110deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(232, 165, 75, 0.22),
+    rgba(110, 200, 192, 0.15),
+    rgba(255, 255, 255, 0.05)
+  );
+  background-size: 220% 220%;
+  animation: shimmer 4.5s linear infinite;
+}
